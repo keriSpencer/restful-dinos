@@ -1,0 +1,24 @@
+{
+  "name": "restfuldinos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keriSpencer/restful-dinos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keriSpencer/restful-dinos/issues"
+  },
+  "homepage": "https://github.com/keriSpencer/restful-dinos#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "pg-promise": "^6.3.7"
+  }
+}
