@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Delete a Dinosaur</title>
+    <style>
+      img {
+        height: 200px;
+        width: 300px;
+        border: 1px solid #666;
+        border-radius: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    {{#dinos}}
+    <form class="" action="/api/dinosaurs/{{id}}/delete" method="post">
+      <h2>Delete this Dinosaur?</h2>
+      <button type="submit" name="delete">Delete this Dino!</button>
+    </form>
+    <h1>{{name}}</h1>
+    <div class="container">
+    <div class="singleDino_dino">
+      <img src="{{img}}" alt="{{name}}">
+      <h3>Color of {{name}}: {{color}}</h3>
+      <h3>Size: {{size}}</h3>
+      <h3>Enjoys living in: {{habitats}}</h3>
+    </div>
+    {{/dinos}}
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dinosaur Edit</title>
+    <style>
+      li {
+        list-style: none;
+        padding-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Update this Dinosaur!</h1>
+    {{#dinos}}
+    <form method="post" action="/api/dinosaurs/{{id}}">
+      <ul>
+          <li><input type="text" name="name" value="{{name}}" placeholder="={{name}}"></li>
+          <li><input type="text" name="color" value="{{color}}" placeholder="{{color}}"></li>
+          <li><input type="text" name="size" value="{{size}}" placeholder="{{size}}"></li>
+          <li><input type="text" name="habitats" value="{{habitats}}" placeholder="{{habitats}}"></li>
+          <button type="submit" name="button">Update Your Dinosaur</button>
+      </ul>
+    {{/dinos}}
+    </form>
+  </body>
+</html>

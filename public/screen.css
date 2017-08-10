@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 420px;
+  margin: 0;
+}
+
+a {
+  padding-top: 13px;
+  padding-bottom: 26px;
+}
+
+.singleDino {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+  border: 1px solid #666;
+  border-radius: 1%;
+}
